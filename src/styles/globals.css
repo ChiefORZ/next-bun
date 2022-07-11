@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinner-border {
+  vertical-align: -0.125em;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+}
+
+.loading-overlay {
+  @apply absolute top-0 left-0 right-0 bottom-0 z-50 overflow-hidden flex flex-col items-center justify-center;
+  @apply before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:z-0 before:overflow-hidden before:backdrop-filter before:backdrop-blur-[1px] before:bg-white/30;
+
+}
